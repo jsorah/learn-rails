@@ -12,11 +12,12 @@ class VisitorsController < ApplicationController
     else
       render :new
     end
+  end
 
-    private
+  private
 
-    def secure_params
-      params.require(:visitor).permit(:email)
-    end
+  def secure_params
+    params.require(:visitor).permit(:email)
+  end
 end
 
